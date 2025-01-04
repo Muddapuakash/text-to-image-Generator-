@@ -33,12 +33,12 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai-image-generator.git
+git clone https://github.com/Muddapuakash/text-to-image-Generator-
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd ai-image-generator
+cd client
 ```
 
 3. Install dependencies:
@@ -48,7 +48,8 @@ npm install
 
 4. Create a `.env` file in the root directory and add your environment variables:
 ```env
-REACT_APP_API_URL=your_api_url
+Mongodb_URL=your_api_url
+Open_Api_KEY= your_api_key
 ```
 
 5. Start the development server:
@@ -56,52 +57,8 @@ REACT_APP_API_URL=your_api_url
 npm start
 ```
 
-## Project Structure
 
-```
-src/
-├── components/
-│   ├── form/
-│   │   └── GenerateImage.jsx
-│   ├── Input/
-│   │   └── TextInput.jsx
-│   └── buttons/
-│       └── button.jsx
-├── api/
-│   └── index.js
-├── styles/
-│   └── index.css
-└── App.js
-```
 
-## Component Usage
-
-### GenerateImage Component
-
-```jsx
-import GenerateImage from './components/form/GenerateImage';
-
-function App() {
-  return (
-    <GenerateImage
-      onGenerate={async (prompt) => {
-        // Handle image generation
-        const response = await generateImage(prompt);
-        return response;
-      }}
-      onPost={async (post) => {
-        // Handle post creation
-        await createPost(post);
-      }}
-      suggestions={[
-        "A cyberpunk city at sunset with flying cars",
-        "A magical forest with glowing mushrooms",
-        "An underwater temple with ancient artifacts"
-      ]}
-    />
-  );
-}
-```
 
 ## Props
 
@@ -129,19 +86,6 @@ function App() {
 - Quick reuse of successful prompts
 - View generation history
 
-## API Integration
-
-The component interfaces with two main API endpoints:
-
-1. Generate Image API:
-```javascript
-const response = await GenerateImageFromPrompt({ prompt: "your prompt" });
-```
-
-2. Create Post API:
-```javascript
-const response = await CreatePost({ name, prompt, photo });
-```
 
 ## Styling
 
@@ -166,9 +110,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Your Name - [@muddapuakash](https://www.linkedin.com/in/muddapuakash/)
 
-Project Link: [https://github.com/yourusername/ai-image-generator](https://github.com/yourusername/ai-image-generator)
+Project Link: [https://github.com/Muddapuakash/text-to-image-Generator-](https://github.com/Muddapuakash/text-to-image-Generator-)
 
 ## Acknowledgments
 
