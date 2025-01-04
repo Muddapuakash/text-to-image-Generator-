@@ -2,7 +2,7 @@
 
 A modern React application that allows users to generate images using AI, save them, and share them with the community.
 
-![AI Image Generator]()
+![AI Image Generator](images/o1.jpg)
 
 ## Features
 
